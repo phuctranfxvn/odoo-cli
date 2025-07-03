@@ -13,7 +13,8 @@ def get_addons_path():
     addons_root = base / 'addons'
     odoo_addons = [
         base / 'odoo' / 'addons',
-        base / 'odoo' / 'odoo' / 'addons'
+        base / 'odoo' / 'odoo' / 'addons',
+        base / 'project'
     ]
 
     custom_addons = []
