@@ -20,6 +20,9 @@ pip uninstall odoo-cli
 
 ## 🚀 Usage
 
+### Virtual Environment
+- Create a virtual environment with the same name as the project folder
+
 ### Start Odoo
 
 ```bash
@@ -55,8 +58,6 @@ This CLI is designed to be used inside a [pew](https://github.com/berdario/pew)-
 ├── config/local.conf
 └── ...
 ```
-
-Make sure your virtualenv is activated before using any commands.
 
 ## 🛠 Requirements
 
