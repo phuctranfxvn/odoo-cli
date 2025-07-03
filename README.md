@@ -1,20 +1,65 @@
 # odoo-cli
 
-## Install
-`pip install git+https://github.com/phuctranfxvn/odoo-cli.git`
+A simple command-line tool to manage Odoo projects using a **pew-managed virtual environment**.
 
-## Uninstall
-`pip uninstall odoo-cli`
+## 📦 Installation
 
-## Usage
+Install directly from GitHub:
+
+```bash
+pip install git+https://github.com/phuctranfxvn/odoo-cli.git
+```
+
+## ❌ Uninstallation
+
+To remove the tool:
+
+```bash
+pip uninstall odoo-cli
+```
+
+## 🚀 Usage
+
 ### Start Odoo
-`odoo start`
 
-### Start Odoo in Debug Mode (Port 5678)
-`odoo debug`
+```bash
+odoo start
+```
 
-### Upgrade Odoo
-`odoo upgrade -d <db_name> -m <modules separated by comma>`
+### Start Odoo in Debug Mode (port `5678`)
 
+```bash
+odoo debug
+```
 
-A CLI tool to start or upgrade an Odoo project using a pew-managed virtualenv.
+### Upgrade Odoo Modules
+
+```bash
+odoo upgrade -d <db_name> -m <module1,module2,...>
+```
+
+Replace `<db_name>` with your database name and `<module1,module2,...>` with a comma-separated list of modules to upgrade.
+
+---
+
+## 📁 Project Structure
+
+This CLI is designed to be used inside a [pew](https://github.com/berdario/pew)-managed virtualenv containing an Odoo project, structured as follows:
+
+```
+<project_root>/
+│
+├── odoo/
+├── addons/
+├── project/
+├── config/local.conf
+└── ...
+```
+
+Make sure your virtualenv is activated before using any commands.
+
+## 🛠 Requirements
+
+- Python 3.7+
+- `pew` for managing virtual environments
+- `odoo-bin` available in your Odoo project path
