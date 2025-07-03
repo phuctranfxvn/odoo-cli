@@ -10,6 +10,6 @@ pip uninstall odoo-cli
 odoo start
 
 ## Upgrade Odoo
-odoo upgrade -d <db_name> -m <modules separated by comma>
+odoo upgrade -d [db_name] -m [modules separated by comma]
 
 A CLI tool to start or upgrade an Odoo project using a pew-managed virtualenv.
