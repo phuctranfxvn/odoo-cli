@@ -55,7 +55,7 @@ This CLI is designed to be used inside a [pew](https://github.com/berdario/pew)-
 ├── odoo/
 ├── addons/
 ├── project/
-├── config/local.conf
+├── config/local.conf or config/dev.conf
 └── ...
 ```
 
