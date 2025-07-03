@@ -61,7 +61,7 @@ def in_env(name):
         os.environ.clear()
         os.environ.update(old_env)
 
-def run_odoo_command(args_list):
+def run_odoo_command(args_list, debug=False):
     project_name = get_project_name()
     addons_path = get_addons_path()
     config_file = get_config_path()
@@ -71,8 +71,12 @@ def run_odoo_command(args_list):
         print("❌ Unable to find odoo-bin in the folder ./odoo/")
         sys.exit(1)
 
-    cmd = [
-        "python", str(odoo_bin),
+    cmd = ["python"]
+    if debug:
+        cmd += ["-m", "debugpy", "--listen", "5678"]
+
+    cmd += [
+        str(odoo_bin),
         f"--addons-path={addons_path}",
         f"--config={config_file}"
     ] + args_list
@@ -89,6 +93,7 @@ def main():
     subparsers = parser.add_subparsers(dest="command")
 
     parser_start = subparsers.add_parser("start", help="Start Odoo server")
+    parser_debug = subparsers.add_parser("debug", help="Start Odoo server in debug mode (Debug port: 5678)")
     parser_upgrade = subparsers.add_parser("upgrade", help="Upgrade Odoo modules")
     parser_upgrade.add_argument("-d", "--database", required=True, help="Database name")
     parser_upgrade.add_argument("-m", "--modules", required=True, help="Comma-separated module names")
@@ -97,6 +102,8 @@ def main():
 
     if args.command == "start":
         run_odoo_command([])
+    elif args.command == "debug":
+        run_odoo_command([], debug=True)
     elif args.command == "upgrade":
         run_odoo_command(["-d", args.database, "-u", args.modules])
     else:
