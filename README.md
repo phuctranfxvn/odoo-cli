@@ -1,4 +1,4 @@
-# odoorunner
+# odooquickrun
 
 A simple command-line tool to manage Odoo projects using a **pew-managed virtual environment**.
 
@@ -7,7 +7,7 @@ A simple command-line tool to manage Odoo projects using a **pew-managed virtual
 Install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/phuctranfxvn/odoorunner.git
+pip install git+https://github.com/phuctranfxvn/odooquickrun.git
 ```
 
 ## ❌ Uninstallation
@@ -15,7 +15,7 @@ pip install git+https://github.com/phuctranfxvn/odoorunner.git
 To remove the tool:
 
 ```bash
-pip uninstall odoorunner
+pip uninstall odooquickrun
 ```
 
 ## 🚀 Usage
@@ -26,19 +26,19 @@ pip uninstall odoorunner
 ### Start Odoo
 
 ```bash
-odoorunner start
+odooquickrun start
 ```
 
 ### Start Odoo in Debug Mode (port `5678`)
 
 ```bash
-odoorunner debug
+odooquickrun debug
 ```
 
 ### Upgrade Odoo Modules
 
 ```bash
-odoorunner upgrade -d <db_name> -m <module1,module2,...>
+odooquickrun upgrade -d <db_name> -m <module1,module2,...>
 ```
 
 Replace `<db_name>` with your database name and `<module1,module2,...>` with a comma-separated list of modules to upgrade.

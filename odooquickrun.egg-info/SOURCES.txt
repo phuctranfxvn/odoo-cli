@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+odooquickrun/__init__.py
+odooquickrun/__version__.py
+odooquickrun/runner.py
+odooquickrun.egg-info/PKG-INFO
+odooquickrun.egg-info/SOURCES.txt
+odooquickrun.egg-info/dependency_links.txt
+odooquickrun.egg-info/entry_points.txt
+odooquickrun.egg-info/top_level.txt

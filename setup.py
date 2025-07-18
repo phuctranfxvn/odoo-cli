@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 version = {}
-with open("odoorunner/__version__.py") as f:
+with open("odooquickrun/__version__.py") as f:
     exec(f.read(), version)
 
 setup(
-    name="odoorunner",
+    name="odooquickrun",
     version=version["__version__"],
     author="Phuc (Tran Thanh)",
     author_email='phuctran.fx.vn@gmail.com',
@@ -12,11 +12,11 @@ setup(
     license='MIT',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/phuctranfxvn/odoorunner',
+    url='https://github.com/phuctranfxvn/odooquickrun',
     packages=find_packages(),
     entry_points={
         "console_scripts": [
-            "odoorunner=odoorunner.runner:runner",
+            "odooquickrun=odooquickrun.runner:runner",
         ]
     },
     python_requires=">=3.6",

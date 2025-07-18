@@ -4,7 +4,7 @@ import sys
 import os
 from pathlib import Path
 from contextlib import contextmanager
-from odoorunner.__version__ import __version__
+from odooquickrun.__version__ import __version__
 
 def get_project_name():
     return Path.cwd().name
