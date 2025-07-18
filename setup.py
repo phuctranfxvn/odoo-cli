@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     entry_points={
         "console_scripts": [
-            "odoo=odoo_cli.cli:cli",
+            "odoorunner=odoo_cli.cli:cli",
         ]
     },
     python_requires=">=3.6",

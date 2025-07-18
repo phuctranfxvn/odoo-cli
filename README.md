@@ -26,19 +26,19 @@ pip uninstall odoo-cli
 ### Start Odoo
 
 ```bash
-odoo start
+odoorunner start
 ```
 
 ### Start Odoo in Debug Mode (port `5678`)
 
 ```bash
-odoo debug
+odoorunner debug
 ```
 
 ### Upgrade Odoo Modules
 
 ```bash
-odoo upgrade -d <db_name> -m <module1,module2,...>
+odoorunner upgrade -d <db_name> -m <module1,module2,...>
 ```
 
 Replace `<db_name>` with your database name and `<module1,module2,...>` with a comma-separated list of modules to upgrade.
