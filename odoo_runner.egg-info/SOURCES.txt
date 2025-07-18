@@ -1,0 +1,9 @@
+README.md
+setup.py
+odoo_runner/__init__.py
+odoo_runner/runner.py
+odoo_runner.egg-info/PKG-INFO
+odoo_runner.egg-info/SOURCES.txt
+odoo_runner.egg-info/dependency_links.txt
+odoo_runner.egg-info/entry_points.txt
+odoo_runner.egg-info/top_level.txt

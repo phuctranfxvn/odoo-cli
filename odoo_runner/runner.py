@@ -4,6 +4,7 @@ import sys
 import os
 from pathlib import Path
 from contextlib import contextmanager
+from odoo_runner.__version__ import __version__
 
 def get_project_name():
     return Path.cwd().name
@@ -90,6 +91,11 @@ def run_odoo_command(args_list, debug=False):
 
 def main():
     parser = argparse.ArgumentParser(description="Odoo project runner with pew env context")
+    parser.add_argument(
+        "-v", "--version",
+        action="version",
+        version=f"%(prog)s {__version__}"
+    )
     subparsers = parser.add_subparsers(dest="command")
 
     parser_start = subparsers.add_parser("start", help="Start Odoo server")
@@ -109,5 +115,5 @@ def main():
     else:
         parser.print_help()
 
-def cli():
+def runner():
     main()

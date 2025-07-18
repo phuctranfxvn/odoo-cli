@@ -1,4 +1,4 @@
-# odoo-cli
+# odoo-runner
 
 A simple command-line tool to manage Odoo projects using a **pew-managed virtual environment**.
 
@@ -7,7 +7,7 @@ A simple command-line tool to manage Odoo projects using a **pew-managed virtual
 Install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/phuctranfxvn/odoo-cli.git
+pip install git+https://github.com/phuctranfxvn/odoo-runner.git
 ```
 
 ## ❌ Uninstallation
@@ -15,7 +15,7 @@ pip install git+https://github.com/phuctranfxvn/odoo-cli.git
 To remove the tool:
 
 ```bash
-pip uninstall odoo-cli
+pip uninstall odoo-runner
 ```
 
 ## 🚀 Usage
@@ -52,12 +52,30 @@ This CLI is designed to be used inside a [pew](https://github.com/berdario/pew)-
 ```
 <project_root>/
 │
-├── odoo/
+├── odoo/                             # Odoo core (source code)
+│
 ├── addons/
-├── project/
-├── config/local.conf or config/dev.conf
-└── ...
+│   ├── custom_3rd_party_addons_1/    # 3rd party modules (OCA, ...)
+│   │   ├── module_a/
+│   │   ├── module_b/
+│   ├── custom_3rd_party_addons_2/
+│   │   ├── module_c/
+│   │   ├── module_d/
+│   ...
+│
+├── project/                          # Customized modules for project
+│   ├── project_module_1/
+│   ├── project_module_2/
+│   ├── project_module_3/
+│
+├── config/
+    ├── local.conf (or dev.conf)
+
 ```
+
+#### Notes:
+- You don't need to specify the addons_path in the .conf file, the script will automatically prepare it for you.
+- 
 
 ## 🛠 Requirements
 

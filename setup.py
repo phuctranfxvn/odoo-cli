@@ -1,15 +1,29 @@
 from setuptools import setup, find_packages
+version = {}
+with open("odoo_runner/__version__.py") as f:
+    exec(f.read(), version)
 
 setup(
-    name="odoo-cli",
-    version="0.1.0",
+    name="odoo-runner",
+    version=version["__version__"],
+    author="Phuc (Tran Thanh)",
+    author_email='phuctran.fx.vn@gmail.com',
+    description="Runner tool to run Odoo project using pew virtualenvs",
+    license='MIT',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    url='https://github.com/phuctranfxvn/odoo-runner',
     packages=find_packages(),
     entry_points={
         "console_scripts": [
-            "odoorunner=odoo_cli.cli:cli",
+            "odoorunner=odoo_runner.runner:runner",
         ]
     },
     python_requires=">=3.6",
-    author="Phúc",
-    description="CLI tool to run Odoo projects using pew virtualenvs",
+
+    classifiers=[
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Operating System :: OS Independent',
+    ],
 )

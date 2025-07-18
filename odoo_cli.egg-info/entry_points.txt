@@ -1,3 +1,0 @@
-[console_scripts]
-odoo = odoo_cli.cli:cli
-

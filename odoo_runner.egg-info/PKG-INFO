@@ -1,5 +1,5 @@
 Metadata-Version: 1.2
-Name: odoo-cli
+Name: odoo-runner
 Version: 0.1.0
 Summary: CLI tool to run Odoo projects using pew virtualenvs
 Home-page: UNKNOWN
