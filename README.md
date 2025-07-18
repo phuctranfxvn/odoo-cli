@@ -7,7 +7,7 @@ A simple command-line tool to manage Odoo projects using a **pew-managed virtual
 Install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/phuctranfxvn/odooquickrun.git
+pip install odooquickrun
 ```
 
 ## ❌ Uninstallation
