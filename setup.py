@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 version = {}
-with open("odoo_runner/__version__.py") as f:
+with open("odoorunner/__version__.py") as f:
     exec(f.read(), version)
 
 setup(
@@ -16,7 +16,7 @@ setup(
     packages=find_packages(),
     entry_points={
         "console_scripts": [
-            "odoorunner=odoo_runner.runner:runner",
+            "odoorunner=odoorunner.runner:runner",
         ]
     },
     python_requires=">=3.6",
