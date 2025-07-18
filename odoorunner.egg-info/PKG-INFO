@@ -1,8 +1,8 @@
 Metadata-Version: 2.4
-Name: odoo-runner
+Name: odoorunner
 Version: 1.0.0
 Summary: Runner tool to run Odoo project using pew virtualenvs
-Home-page: https://github.com/phuctranfxvn/odoo-runner
+Home-page: https://github.com/phuctranfxvn/odoorunner
 Author: Phuc (Tran Thanh)
 Author-email: phuctran.fx.vn@gmail.com
 License: MIT
@@ -23,7 +23,7 @@ Dynamic: license-file
 Dynamic: requires-python
 Dynamic: summary
 
-# odoo-runner
+# odoorunner
 
 A simple command-line tool to manage Odoo projects using a **pew-managed virtual environment**.
 
@@ -32,7 +32,7 @@ A simple command-line tool to manage Odoo projects using a **pew-managed virtual
 Install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/phuctranfxvn/odoo-runner.git
+pip install git+https://github.com/phuctranfxvn/odoorunner.git
 ```
 
 ## ❌ Uninstallation
@@ -40,7 +40,7 @@ pip install git+https://github.com/phuctranfxvn/odoo-runner.git
 To remove the tool:
 
 ```bash
-pip uninstall odoo-runner
+pip uninstall odoorunner
 ```
 
 ## 🚀 Usage

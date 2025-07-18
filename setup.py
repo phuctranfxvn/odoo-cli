@@ -4,7 +4,7 @@ with open("odoorunner/__version__.py") as f:
     exec(f.read(), version)
 
 setup(
-    name="odoo-runner",
+    name="odoorunner",
     version=version["__version__"],
     author="Phuc (Tran Thanh)",
     author_email='phuctran.fx.vn@gmail.com',
@@ -12,7 +12,7 @@ setup(
     license='MIT',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/phuctranfxvn/odoo-runner',
+    url='https://github.com/phuctranfxvn/odoorunner',
     packages=find_packages(),
     entry_points={
         "console_scripts": [

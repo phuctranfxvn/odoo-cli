@@ -1,4 +1,4 @@
-# odoo-runner
+# odoorunner
 
 A simple command-line tool to manage Odoo projects using a **pew-managed virtual environment**.
 
@@ -7,7 +7,7 @@ A simple command-line tool to manage Odoo projects using a **pew-managed virtual
 Install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/phuctranfxvn/odoo-runner.git
+pip install git+https://github.com/phuctranfxvn/odoorunner.git
 ```
 
 ## ❌ Uninstallation
@@ -15,7 +15,7 @@ pip install git+https://github.com/phuctranfxvn/odoo-runner.git
 To remove the tool:
 
 ```bash
-pip uninstall odoo-runner
+pip uninstall odoorunner
 ```
 
 ## 🚀 Usage
